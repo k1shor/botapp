@@ -1,0 +1,16 @@
+*{
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.custom-image:hover{
+    transform: scale(1.5);
+}
+
+.card-img-container{
+    overflow: hidden;
+}
+
+.custom-image{
+    transition:2s;
+}
