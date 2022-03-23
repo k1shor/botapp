@@ -23,7 +23,9 @@ const Nav = () => {
                         </li></div>
                 </div>
                 <div className='col-sm-12 col-md-6'>
-                    <h3 className='text-center text-white bg-primary pt-2'>Telegram Bots And Channel</h3>
+                    <a href='/'>
+                        <h3 className='text-center text-white bg-primary pt-2'>Telegram Bots And Channel</h3>
+                        </a>
                 </div>
                 <div className='col-sm-12 col-md-3'></div>
             </div>

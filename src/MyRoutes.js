@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Switch as Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Gaming from './Pages/Gaming'
 import Music from './Pages/Music'
@@ -14,13 +14,13 @@ const MyRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/gaming' element={<Gaming/>}/>
-                <Route path='/music' element={<Music/>}/>
-                <Route path='/entertainment' element={<Entertainment/>}/>
-                <Route path='/utility' element={<Utility/>}/>
-                <Route path='/productivity' element={<Productivity/>}/>
-                <Route path='/botdetail/:id' element={<BotDetail/>}/>
+                <Route exact path='/' component={Home}/>
+                <Route exact path='/gaming' component={Gaming}/>
+                <Route exact path='/music' component={Music}/>
+                <Route exact path='/entertainment' component={Entertainment}/>
+                <Route exact path='/utility' component={Utility}/>
+                <Route exact path='/productivity' component={Productivity}/>
+                <Route exact path='/botdetail' component={BotDetail}/>
             </Routes>
         </BrowserRouter>
     )
